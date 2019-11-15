@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  background-color: #232222;
+  overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+
+#board {
+  /* background-color: #463239; */
+  /* width: 100%; */
+  /* height: 1000px; */
+  padding: 50px;
+  display: flex;
+}
+
+.note {
+  /* background-color: #ED6B86; */
+  width: 200px;
+  min-height: 250px;
+  margin: 10px;
+  position: absolute;
+  /* position: relative; */
+  /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); */
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  font-family: 'Permanent Marker', cursive;
+  /* border-bottom-right-radius: 50px 10px;
+  border-bottom-left-radius: 10px 50px;
+  border-top-right-radius: 50px 10px;
+  border-top-left-radius: 10px 90px; */
+}
+
+.note .pin {
+  position: absolute;
+  /* z-index: 100; */
+  top: 0px;
+  left: 43%;
+  /* width: 100px; */
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  transform: rotate(40deg);
+  cursor: move;
+}
+
+.note p {
+  margin: 0;
+  padding: 20px 10px;
+}
+
+.actions {
+  /* position: absolute;bottom: 5px;right: 5px; */
+  padding: 0;
+  margin: 0;
+  background-color: rgb(82, 47, 59, 0.5);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.note:hover .actions {
+  opacity: 1;
+}
+
+.actions button, button {
+  margin: 0;
+  border: none;
+  padding: 8px;
+  background-color: transparent;
+}
+
+.actions button:focus {
+  outline: none;
+}
+
+#add {
+  background-color: #ED6B86;
+  color: #fff;
+}
+
+form {
+  position: relative;
+}
+form button {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) inset;
+}
+
+.actions button:hover, button:hover {
+  background-color: rgb(195, 202, 195, 0.5);
+}
