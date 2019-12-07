@@ -1,7 +1,12 @@
 {
   "name": "bulletin-board",
-  "version": "0.1.0",
+  "version": "1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Said-Nasser/bulletin-board.git"
+  },
+  "author": "Said Nasser",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",

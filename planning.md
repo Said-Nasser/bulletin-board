@@ -7,4 +7,4 @@
 # board
  1. we store the notes in the 'state', each state should have an id and a note
  2. we pass down the notes from the 'state' as props to be rendered on the screen
- 3. 
+ 
